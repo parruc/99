@@ -7,10 +7,14 @@
                     {{#if isDisabled}}
                     <button type="button" class="btn btn-default" disabled></button>
                     {{else}}
-                    <button type="button" class="btn btn-success"></button>
+                    <button type="button" class="btn btn-info"></button>
                     {{/if}}
                     {{else}}
-                    <div class="clicked">{{value}}</div>
+                    {{# if isSelected}}
+                    <button type="button" class="btn btn-primary" disabled><b>{{value}}</b></button>
+                    {{else}}
+                    <button type="button" class="clicked btn btn-success" disabled><b>{{value}}</b></button>
+                    {{/if}}
                     {{/if}}
                 </div>
             </div>

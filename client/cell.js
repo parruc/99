@@ -15,6 +15,10 @@ Template.cell.helpers({
         //diagonal 1 space move
         if(Math.abs(position.row-this.row) == 2 && Math.abs(position.col-this.col) == 2) return false;
         return true;
+    },
+    isSelected: function(){
+        position = Session.get("position");
+        return position.row == this.row && position.col == this.col
     }
 });
 
