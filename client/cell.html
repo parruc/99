@@ -1,13 +1,19 @@
 <template name="cell">
-    <div class="col-xs-1">
-        {{#if isButton}}
-            {{#if isDisabled}}
-                <button type="button" class="btn btn-default" disabled></button>
-            {{else}}
-                <button type="button" class="btn btn-success"></button>
-            {{/if}}
-        {{else}}
-            <div class="clicked">{{value}}</div>
-        {{/if}}
+    <div class="square">
+        <div class="content">
+            <div class="table">
+                <div class="table-cell numbers">
+                    {{#if isButton}}
+                    {{#if isDisabled}}
+                    <button type="button" class="btn btn-default" disabled></button>
+                    {{else}}
+                    <button type="button" class="btn btn-success"></button>
+                    {{/if}}
+                    {{else}}
+                    <div class="clicked">{{value}}</div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
     </div>
 </template>
