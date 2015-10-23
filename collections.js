@@ -15,3 +15,11 @@ if(recreate){
         }
     }
 }
+
+Results = new Mongo.Collection('results');
+
+Meteor.methods({
+    addResult: function (text) {
+        Results.insert("aaaaa");
+    }
+});

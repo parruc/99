@@ -7,13 +7,13 @@
                     {{#if isDisabled}}
                     <button type="button" class="btn btn-default" disabled></button>
                     {{else}}
-                    <button type="button" class="btn btn-info"></button>
+                    <button type="button" class="available btn btn-info"></button>
                     {{/if}}
                     {{else}}
                     {{# if isSelected}}
-                    <button type="button" class="btn btn-primary" disabled><b>{{value}}</b></button>
+                    <button type="button" class="active btn-number btn btn-warning" disabled><b>{{value}}</b></button>
                     {{else}}
-                    <button type="button" class="clicked btn btn-success" disabled><b>{{value}}</b></button>
+                    <button type="button" class="btn-number btn btn-success" disabled><b>{{value}}</b></button>
                     {{/if}}
                     {{/if}}
                 </div>

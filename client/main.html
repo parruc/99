@@ -1,0 +1,12 @@
+<template name="main">
+    <h1>Welcome to 99!</h1>
+    {{> loginButtons}}
+    <div class="results">
+        {{>results}}
+    </div>
+    <div class="external">
+        {{#each rows}}
+        {{>row}}
+        {{/each}}
+    </div>
+</template>
