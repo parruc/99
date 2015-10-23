@@ -42,6 +42,7 @@ Template.cell.events({
                 startTime = Session.get("startTime");
                 elapsedTime = (endTime - startTime)/60;
                 Meteor.call("addResult", {user:"pippo", counter: counter, time:elapsedTime});
+                $('#resultsModal').modal('show');
             }
         });
     }
