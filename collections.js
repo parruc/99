@@ -19,7 +19,7 @@ if(recreate){
 Results = new Mongo.Collection('results');
 
 Meteor.methods({
-    addResult: function (text) {
-        Results.insert("aaaaa");
+    addResult: function (params) {
+        Results.insert({user: params.user, result: params.counter, time:params.elapsedTime});
     }
 });
