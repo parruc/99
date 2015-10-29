@@ -36,13 +36,20 @@ Template.cell.events({
         Tracker.afterFlush(function() {
             dead = Session.get("dead");
             counter = Session.get("counter");
+            // if no more possible moves left
             if(dead && counter)
             {
                 endTime = new Date().getTime();
                 startTime = Session.get("startTime");
                 elapsedTime = (endTime - startTime)/60;
-                Meteor.call("addResult", {user:"pippo", counter: counter, time:elapsedTime});
                 $('#resultsModal').modal('show');
+                user = Meteor.user();
+                if(!user){
+                    // TODO: mostrare popup iscrizione
+                }
+                else{
+                    Meteor.call("addResult", {username:user.name, counter: counter, time:elapsedTime});
+                }
             }
         });
     }
