@@ -18,7 +18,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 bootstrap
 twbs:bootstrap
-accounts-ui
 accounts-password
 accounts-google
 accounts-twitter
@@ -26,3 +25,7 @@ accounts-facebook
 accounts-github
 meteorhacks:kadira
 service-configuration
+accounts-ui-unstyled
+useraccounts:bootstrap
+useraccounts:core
+iron:router
