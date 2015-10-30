@@ -29,3 +29,5 @@ accounts-ui-unstyled
 useraccounts:bootstrap
 useraccounts:core
 iron:router
+sacha:spin
+useraccounts:iron-routing

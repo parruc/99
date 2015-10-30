@@ -2,7 +2,7 @@ Accounts.ui.config({
     passwordSignupFields: "USERNAME_ONLY"
 });
 
-Template.main.helpers({
+Template.game.helpers({
     rows: function () {
         return Rows.find();
     }
