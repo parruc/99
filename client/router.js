@@ -6,6 +6,7 @@ Router.configure({
 
 Router.map(function() {
     this.route('game', {path: '/'});
+    this.route('results', {path: '/results'});
 });
 
 //AccountsTemplates.configureRoute('changePwd');

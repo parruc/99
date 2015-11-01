@@ -26,8 +26,8 @@ accounts-github
 meteorhacks:kadira
 service-configuration
 accounts-ui-unstyled
-useraccounts:bootstrap
 useraccounts:core
 iron:router
 sacha:spin
 useraccounts:iron-routing
+useraccounts:bootstrap

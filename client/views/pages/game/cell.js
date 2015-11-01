@@ -48,7 +48,7 @@ Template.cell.events({
                     // TODO: mostrare popup iscrizione
                 }
                 else{
-                    Meteor.call("addResult", {username:user.name, counter: counter, time:elapsedTime});
+                    Meteor.call("addResult", {user:user, counter: counter, time:elapsedTime});
                 }
             }
         });

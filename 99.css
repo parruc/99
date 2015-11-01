@@ -1,15 +1,9 @@
 /* CSS declarations go here */
-button.btn{
-    width:100%;
-    height:100%;
+.navbar-right li a{
+    width: 33%;
+    display: block;
+    float: left;
     text-align: center;
-    margin:1px;
-    padding: 0px;
-}
-.external{
-    border: 1px solid gray;
-    width: 50%;
-    margin: auto;
 }
 .btn-number{
     text-align: center;
@@ -30,6 +24,13 @@ button.btn{
     background-color:#FFFFFF;
     overflow:hidden;
 }
+.square button.btn{
+    width:100%;
+    height:100%;
+    text-align: center;
+    margin:1px;
+    padding: 0px;
+}
 .content {
     position:absolute;
     height:100%;
@@ -45,19 +46,25 @@ button.btn{
     vertical-align:middle;
 }
 
-@media only screen and (max-width : 768px) {
+@media only all and (max-width : 768px) {
     .btn-number {
         font-size: 20px;
     }
-    .external {
+    .content-wrapper {
         width: 90%;
     }
 }
-@media only screen and (max-width : 600px) {
+@media only all and (max-width : 600px) {
+    .content-wrapper {
+        width: 98%;
+    }
     .btn-number {
         font-size: 14px;
     }
-    .external {
-        width: 98%;
+}
+@media only all and (orientation:landscape){
+    .content-wrapper {
+        width: 55%;
+        margin:auto;
     }
 }

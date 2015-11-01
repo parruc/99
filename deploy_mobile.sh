@@ -5,4 +5,4 @@ $JAVA_HOME/bin/jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 release-un
 if [ -f 99.apk ]; then
     rm 99.apk
 fi
-$ANDROID_HOME/build-tools/22.0.0/zipalign 4 release-unsigned.apk 99.apk
+$ANDROID_HOME/build-tools/23.0.1/zipalign 4 release-unsigned.apk 99.apk
